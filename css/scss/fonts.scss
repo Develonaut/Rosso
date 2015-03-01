@@ -1,3 +1,25 @@
+/*===========
+Variables
+=============*/
+
+$bodyFont:  "proxima-nova", Helvetica, Arial, sans-serif;
+$logoFont: "trend_rough_sansone",Helvetica, Arial, sans-serif;
+
+$baseFontSize: 14px;
+
+
+
+@font-face {
+    font-family: 'trend_rough_sansone';
+    src: url('fonts/TrendRoughSansOne-webfont.eot');
+    src: url('fonts/TrendRoughSansOne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/TrendRoughSansOne-webfont.woff2') format('woff2'),
+         url('fonts/TrendRoughSansOne-webfont.woff') format('woff'),
+         url('fonts/TrendRoughSansOne-webfont.ttf') format('truetype'),
+         url('fonts/TrendRoughSansOne-webfont.svg#trend_rough_sansone') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
   font-family: 'icomoon';
@@ -9,6 +31,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 [class
 ^="icon-"], [class*=" icon-"] {
@@ -39,5 +62,17 @@
 }
 
 nav,body, p {
-   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+   font-family: $bodyFont; 
+}
+
+.logo {
+    font-family: $logoFont;
+    font-size: 40px;
+      span {
+        font-size: $baseFontSize - 1px;
+        font-weight: 700;
+        font-family: $logoFont;
+        letter-spacing: 0.250em;
+        text-transform: uppercase;
+      }
 }

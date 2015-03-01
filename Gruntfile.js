@@ -10,8 +10,7 @@ module.exports = function(grunt) {
 			        style: 'expanded'
 			    }, // options
 			    files: {                      
-			       'css/build/main.css': 'css/scss/main.scss',
-			       'css/build/font.css': 'css/scss/fonts.scss' 
+			       'css/build/main.css': 'css/scss/main.scss' 
 			    } // files
 		    } // dist 
     	}, // sass

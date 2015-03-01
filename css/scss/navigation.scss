@@ -1,0 +1,68 @@
+@import 'colors';
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 64px;
+	padding: 0 20px 0 20px; 
+	text-align:center;
+	a,
+	div,
+	.leftNav,
+	.rightNav {
+		text-decoration: none;
+		color: $baseFontColor;
+		text-align: center;
+		margin: 0 auto;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+	}
+
+	div {
+		margin: 0;
+		transition: all 0.3s ease 0s; 
+  		-webkit-transition: all 0.3s ease 0s;
+		a {
+				height: 64px;
+		padding: 20px 10px 0 10px;
+			&:hover {
+				background-color: $baseFontColor;
+				color: $altFontColor; 
+			}
+			&:nth-child(2) {
+				margin-left: -5px;
+			}
+			&:after { 
+			}
+		}
+	}
+
+	.leftNav{
+		float: left;
+	}
+
+	.rightNav {
+		float: right;
+	}
+
+
+	.logo {
+		margin-top: 7px;
+		hr {
+	        margin: 0 auto 0 auto;
+	        width: 92%;
+	        border: 0.04em solid $baseFontColor; 
+      	}
+      	span {
+	        display: block;
+	        margin-top: 8px;
+      	}
+      	&:hover {
+      		color: initial;
+      		background-color: initial;
+      	}
+	}
+}
