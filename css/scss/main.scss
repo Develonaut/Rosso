@@ -3,6 +3,10 @@
 @import 'navigation';
 @import 'footers';
 @import 'colors';
+@import 'videos';
+@import 'icons';
+@import 'time';
+@import 'social';
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -10,3 +14,55 @@
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.introContent {
+	position: relative;
+	width: 80%;
+	max-width: 1200px;
+	padding: 100px 0 10px 0;
+	margin: 0 auto 0 auto;
+	z-index: 998;
+	background-color: $baseWhite;
+	vertical-align: middle;
+	
+	.photoBox {
+	width: 50%;
+	padding-bottom: 100px;
+	float: left;
+	position: relative;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	}
+	.mainPhoto,
+	.subPhoto {
+		position: relative;
+		display: block;
+		height: 150px;
+		max-width: 700px;
+		margin: 15px auto 15px auto;
+		img {
+			width: 100%;
+		}
+	}
+	.mainPhoto {
+		width: 100%;
+		background: url('/images/IngredientsLayedOut.jpg') center no-repeat;
+		background-size: cover;
+		text-indent: -9999px;
+		z-index: 2;
+
+	}
+	.subPhoto {
+		@extend .mainPhoto;
+		background: url('/images/Making_pizza.jpg') center center no-repeat;
+		background-size: cover;
+		text-indent: -9999px;
+	}
+}

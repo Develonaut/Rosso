@@ -7,24 +7,61 @@
 	<script src="//use.typekit.net/sbk7vuw.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 </head>
-<body>
+<body class="clear">
+<!--Navigation -->
 	<nav>
-		<div class="leftNav">
-			<div><a href="#">About</a></div>
-			<div><a href="#">Menu</a></div>
-		</div>
-		<a class="logo" href="#">
+		<div class="navWrapper">
+			<div class="leftNav">
+				<a href="#">About</a>
+				<a href="#">Menu</a>
+			</div>
+			<a class="logo" href="#">
+				Rosso' 
+			</a>
+			<div class="rightNav">
+				<a href="#">Find Us</a>
+				<a href="#">Contact</a>
+			</div>
+		<div>
+	</nav>
+	<section class="videoHero">
+		<a class="videoLogo" href="#">
 			Rosso' 
 			<hr>
-			<span>Artisan Pizza</span>
+			<span>Pleasantly Perfect Pizza.</span>
 		</a>
-		<div class="rightNav">
-			<div><a href="#">Find Us</a></div>
-			<div><a href="#">Contact</a></div>
-		</div>
-	</nav>
+		<video class="player" autoplay="" loop="" muted="">
+	        <source src="/css/build/video/4655750.mp4" type="video/mp4">
+	<!--         add in image fallback to video div -->
+		</video>
+	</section>
+	<section class="introContent clear">
+		<a heref="#" class="downArrow icon-chevron-with-circle-down"></a>
+		
+		<section class="photoBox clear">
+			<div class="mainPhoto"><img src="/images/IngredientsLayedOut.jpg" alt="Ingredients for Pizza"/></div>
+			<div class="subPhoto"><img src="/images/Making_pizza.jpg" alt="Making Pizza"></div>	
+		</section>
 
+		<section class="hours clear">
+			<div class="date-time">
+		      <p>Hello, it's</p> 
+		      <span class="day"></span><br/>
+		      <span class="time"></span><br/>
+		      <p class="openStatement">We're <strong>open</strong>, come on in!</p>
+		    </div>
+		</section>	
+			<section class="socialFeed">
+			<h1>Social</h1>
+		<ul>
+			<li class="social1"><span class="socialTag"></span></li>
+			<li class="social2"><span class="socialTag"></span></li>
+			<li class="social3"><span class="socialTag"></span></li>
+		</ul>
+	</section>
+	</section>		
 <script src="http://localhost:35729/livereload.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/build/app-min.js"></script>
 </body>
 </html>

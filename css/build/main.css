@@ -354,19 +354,196 @@ td,
 th {
   padding: 0; }
 
-/*===========
-Variables
-=============*/
 @font-face {
   font-family: 'trend_rough_sansone';
   src: url("fonts/TrendRoughSansOne-webfont.eot");
   src: url("fonts/TrendRoughSansOne-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/TrendRoughSansOne-webfont.woff2") format("woff2"), url("fonts/TrendRoughSansOne-webfont.woff") format("woff"), url("fonts/TrendRoughSansOne-webfont.ttf") format("truetype"), url("fonts/TrendRoughSansOne-webfont.svg#trend_rough_sansone") format("svg");
   font-weight: normal;
   font-style: normal; }
+nav, body, p {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
+
+.logo, .videoLogo {
+  font-family: "trend_rough_sansone", Helvetica, Arial, sans-serif;
+  font-size: 40px; }
+  .logo span, .videoLogo span {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "trend_rough_sansone", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.250em;
+    text-transform: uppercase; }
+
+nav a {
+  letter-spacing: 0.03em;
+  font-size: 14px; }
+
+.videoLogo {
+  font-size: 90px; }
+  .videoLogo span {
+    font-size: 19px;
+    letter-spacing: 0.10em;
+    text-indent: 11px;
+    font-weight: 500; }
+
+.date-time p,
+.date-time .openStatement {
+  color: #353031;
+  font-size: 20px;
+  letter-spacing: 0.03em; }
+  .date-time p strong,
+  .date-time .openStatement strong {
+    font-size: 49px; }
+.date-time .day {
+  font-size: 54px;
+  font-weight: bold; }
+.date-time .time {
+  font-size: 134px;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+  .date-time .time #suffix {
+    font-size: 19px; }
+
+.socialFeed h1 {
+  font-size: 19px;
+  font-weight: normal; }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  padding: 0 10% 0 10%;
+  text-align: center;
+  z-index: 9999;
+  background-color: #ffffff; }
+  nav .navWrapper {
+    max-width: 1200px;
+    margin: 0 auto; }
+    nav .navWrapper a,
+    nav .navWrapper .leftNav,
+    nav .navWrapper .rightNav {
+      text-decoration: none;
+      color: #353031;
+      text-align: center;
+      margin: 0 auto;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0; }
+      nav .navWrapper a a,
+      nav .navWrapper .leftNav a,
+      nav .navWrapper .rightNav a {
+        padding-top: 25px; }
+    nav .navWrapper a {
+      padding: 20px 15px 0 15px;
+      margin: 0;
+      height: 64px;
+      color: #353031;
+      transition: background-color 0.3s ease 0s;
+      -webkit-transition: background-color 0.3s ease 0s; }
+      nav .navWrapper a:hover {
+        background-color: #353031;
+        color: #ffffff; }
+      nav .navWrapper a:nth-child(2) {
+        margin-left: -5px; }
+    nav .navWrapper .leftNav {
+      float: left; }
+    nav .navWrapper .rightNav {
+      float: right; }
+    nav .navWrapper .logo, nav .navWrapper .videoLogo {
+      margin-top: -13px;
+      cursor: pointer; }
+      nav .navWrapper .logo:hover, nav .navWrapper .videoLogo:hover {
+        color: initial;
+        background-color: initial; }
+
+.videoHero {
+  width: 100%;
+  max-height: 650px;
+  overflow: hidden;
+  position: relative;
+  padding: 0; }
+
+.videoLogo {
+  position: absolute;
+  margin: 0 auto;
+  width: 393px;
+  top: 50%;
+  left: 50%;
+  margin-top: -65px;
+  margin-left: -196px;
+  text-decoration: none;
+  color: #ffffff; }
+  .videoLogo hr {
+    margin: -5px auto 0 auto;
+    width: 93%;
+    border: 0.02em solid #ffffff; }
+  .videoLogo span {
+    display: block;
+    margin-top: 10px; }
+
+video {
+  width: 100%;
+  position: relative;
+  z-index: -1; }
+
+@font-face {
+  font-family: 'trend_rough_sansone';
+  src: url("fonts/TrendRoughSansOne-webfont.eot");
+  src: url("fonts/TrendRoughSansOne-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/TrendRoughSansOne-webfont.woff2") format("woff2"), url("fonts/TrendRoughSansOne-webfont.woff") format("woff"), url("fonts/TrendRoughSansOne-webfont.ttf") format("truetype"), url("fonts/TrendRoughSansOne-webfont.svg#trend_rough_sansone") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+nav, body, p {
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
+
+.logo, .videoLogo {
+  font-family: "trend_rough_sansone", Helvetica, Arial, sans-serif;
+  font-size: 40px; }
+  .logo span, .videoLogo span {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "trend_rough_sansone", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.250em;
+    text-transform: uppercase; }
+
+nav a {
+  letter-spacing: 0.03em;
+  font-size: 14px; }
+
+.videoLogo {
+  font-size: 90px; }
+  .videoLogo span {
+    font-size: 19px;
+    letter-spacing: 0.10em;
+    text-indent: 11px;
+    font-weight: 500; }
+
+.date-time p,
+.date-time .openStatement {
+  color: #353031;
+  font-size: 20px;
+  letter-spacing: 0.03em; }
+  .date-time p strong,
+  .date-time .openStatement strong {
+    font-size: 49px; }
+.date-time .day {
+  font-size: 54px;
+  font-weight: bold; }
+.date-time .time {
+  font-size: 134px;
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+  .date-time .time #suffix {
+    font-size: 19px; }
+
+.socialFeed h1 {
+  font-size: 19px;
+  font-weight: normal; }
+
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?dqbp2w");
-  src: url("fonts/icomoon.eot?#iefixdqbp2w") format("embedded-opentype"), url("fonts/icomoon.woff?dqbp2w") format("woff"), url("fonts/icomoon.ttf?dqbp2w") format("truetype"), url("fonts/icomoon.svg?dqbp2w#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?-7kz40q");
+  src: url("fonts/icomoon.eot?#iefix-7kz40q") format("embedded-opentype"), url("fonts/icomoon.woff?-7kz40q") format("woff"), url("fonts/icomoon.ttf?-7kz40q") format("truetype"), url("fonts/icomoon.svg?-7kz40q#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -381,78 +558,95 @@ Variables
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-twitter:before {
+.icon-chevron-small-down:before {
   content: "\e600"; }
 
-.icon-facebook:before {
+.icon-chevron-thin-down:before {
   content: "\e601"; }
 
-.icon-googleplus:before {
+.icon-chevron-with-circle-down:before {
   content: "\e602"; }
 
-.icon-instagram:before {
+.icon-behance:before {
   content: "\e603"; }
 
-nav, body, p {
-  font-family: "proxima-nova", Helvetica, Arial, sans-serif; }
+.downArrow {
+  position: absolute;
+  display: inline-block;
+  color: #353031;
+  font-size: 34px;
+  left: 50%;
+  margin-left: -18px;
+  top: 30px;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  z-index: 9999; }
+  .downArrow:hover {
+    margin-top: -3px; }
 
-.logo {
-  font-family: "trend_rough_sansone", Helvetica, Arial, sans-serif;
-  font-size: 40px; }
-  .logo span {
-    font-size: 13px;
-    font-weight: 700;
-    font-family: "trend_rough_sansone", Helvetica, Arial, sans-serif;
-    letter-spacing: 0.250em;
-    text-transform: uppercase; }
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 64px;
-  padding: 0 20px 0 20px;
-  text-align: center; }
-  nav a,
-  nav div,
-  nav .leftNav,
-  nav .rightNav {
-    text-decoration: none;
-    color: #231f20;
-    text-align: center;
-    margin: 0 auto;
+.hours {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 100px; }
+  .hours .date-time {
+    position: relative;
     display: inline-block;
+    margin-top: 20px;
+    left: 10%;
     vertical-align: middle;
-    margin: 0; }
-  nav div {
+    width: 320px; }
+    .hours .date-time p,
+    .hours .date-time .openStatement,
+    .hours .date-time .day {
+      position: relative;
+      display: inline-block; }
+    .hours .date-time p,
+    .hours .date-time .day {
+      left: -3px;
+      top: 30px; }
+    .hours .date-time .day {
+      left: 5px; }
+    .hours .date-time .openStatement {
+      top: -50px;
+      left: 5px; }
+    .hours .date-time .time #suffix {
+      margin-left: -30px; }
+
+.socialFeed {
+  display: block;
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  padding: 10px 0 10px 0; }
+  .socialFeed h1 {
+    margin-right: 10px; }
+  .socialFeed ul {
     margin: 0;
-    transition: all 0.3s ease 0s;
-    -webkit-transition: all 0.3s ease 0s; }
-    nav div a {
-      height: 64px;
-      padding: 20px 10px 0 10px; }
-      nav div a:hover {
-        background-color: #231f20;
-        color: #ffffff; }
-      nav div a:nth-child(2) {
-        margin-left: -5px; }
-  nav .leftNav {
-    float: left; }
-  nav .rightNav {
-    float: right; }
-  nav .logo {
-    margin-top: 7px; }
-    nav .logo hr {
-      margin: 0 auto 0 auto;
-      width: 92%;
-      border: 0.04em solid #231f20; }
-    nav .logo span {
-      display: block;
-      margin-top: 8px; }
-    nav .logo:hover {
-      color: initial;
-      background-color: initial; }
+    padding: 0;
+    list-style: none; }
+  .socialFeed li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 33%;
+    max-width: 450px;
+    height: 400px; }
+  .socialFeed .social1 {
+    background: url("/images/social1.jpg") no-repeat;
+    background-size: cover; }
+  .socialFeed .social2 {
+    background: url("/images/social2.jpg") no-repeat;
+    background-size: cover; }
+  .socialFeed .social3 {
+    background: url("/images/social3.jpg") no-repeat;
+    background-size: cover; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -461,3 +655,47 @@ nav {
   /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */ }
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.introContent {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  padding: 100px 0 10px 0;
+  margin: 0 auto 0 auto;
+  z-index: 998;
+  background-color: #ffffff;
+  vertical-align: middle; }
+  .introContent .photoBox {
+    width: 50%;
+    padding-bottom: 100px;
+    float: left;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden; }
+  .introContent .mainPhoto, .introContent .subPhoto,
+  .introContent .subPhoto {
+    position: relative;
+    display: block;
+    height: 150px;
+    max-width: 700px;
+    margin: 15px auto 15px auto; }
+    .introContent .mainPhoto img, .introContent .subPhoto img,
+    .introContent .subPhoto img {
+      width: 100%; }
+  .introContent .mainPhoto, .introContent .subPhoto {
+    width: 100%;
+    background: url("/images/IngredientsLayedOut.jpg") center no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    z-index: 2; }
+  .introContent .subPhoto {
+    background: url("/images/Making_pizza.jpg") center center no-repeat;
+    background-size: cover;
+    text-indent: -9999px; }

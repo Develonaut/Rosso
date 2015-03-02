@@ -1,6 +1,4 @@
-/*===========
-Variables
-=============*/
+@import 'colors';
 
 $bodyFont:  "proxima-nova", Helvetica, Arial, sans-serif;
 $logoFont: "trend_rough_sansone",Helvetica, Arial, sans-serif;
@@ -21,45 +19,6 @@ $baseFontSize: 14px;
     font-style: normal;
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src:url('fonts/icomoon.eot?dqbp2w');
-  src:url('fonts/icomoon.eot?#iefixdqbp2w') format('embedded-opentype'),
-    url('fonts/icomoon.woff?dqbp2w') format('woff'),
-    url('fonts/icomoon.ttf?dqbp2w') format('truetype'),
-    url('fonts/icomoon.svg?dqbp2w#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-[class
-^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-twitter:before {
-  content: "\e600";
-}
-.icon-facebook:before {
-  content: "\e601";
-}
-.icon-googleplus:before {
-  content: "\e602";
-}
-.icon-instagram:before {
-  content: "\e603";
-}
 
 nav,body, p {
    font-family: $bodyFont; 
@@ -76,3 +35,56 @@ nav,body, p {
         text-transform: uppercase;
       }
 }
+
+nav a {
+  letter-spacing: 0.03em;
+  font-size: $baseFontSize;
+}
+
+.videoLogo {
+  @extend .logo;
+  font-size: 90px;
+    span {
+      font-size: $baseFontSize + 5px;
+      letter-spacing: 0.10em;
+      text-indent: 11px;
+      font-weight: 500;
+    }
+}
+
+
+.date-time {
+  p,
+  .openStatement {
+    color: $baseBlack;
+    font-size: $baseFontSize + 6px;
+    letter-spacing: 0.03em;
+    strong {
+      font-size: $baseFontSize + 35px;
+    }
+  }
+  .day {
+    font-size: $baseFontSize + 40px;
+    font-weight: bold;
+  }
+  .time {
+    font-size: $baseFontSize + 120px;
+    font-family: $bodyFont;
+    font-weight: bold; 
+    #suffix {
+      font-size: $baseFontSize + 5px;
+    }
+  }
+}
+
+.socialFeed {
+    h1 {
+      font-size: $baseFontSize + 5px;
+      font-weight: normal;
+    }
+}
+
+
+
+
+

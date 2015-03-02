@@ -1,0 +1,36 @@
+.socialFeed {
+	display: block;
+	width: 100%;
+	height: 800px;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	h1 {
+		margin-right: 10px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		display: inline-block;
+		position: relative;
+		float: left;
+		width: 33%;
+		max-width: 450px;
+		height: 400px;
+	}
+	.social1{
+		background: url('/images/social1.jpg') no-repeat;
+		background-size: cover;
+	}
+	.social2 {
+		background: url('/images/social2.jpg') no-repeat;
+		background-size: cover;
+	}
+	.social3 {
+		background: url('/images/social3.jpg') no-repeat;
+		background-size: cover;
+	}
+
+}
