@@ -53,7 +53,7 @@
 	}
 	.mainPhoto {
 		width: 100%;
-		background: url('/images/IngredientsLayedOut.jpg') center no-repeat;
+		background: url('images/IngredientsLayedOut.jpg') center no-repeat;
 		background-size: cover;
 		text-indent: -9999px;
 		z-index: 2;
@@ -61,7 +61,7 @@
 	}
 	.subPhoto {
 		@extend .mainPhoto;
-		background: url('/images/Making_pizza.jpg') center center no-repeat;
+		background: url('images/Making_pizza.jpg') center center no-repeat;
 		background-size: cover;
 		text-indent: -9999px;
 	}
