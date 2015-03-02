@@ -3,11 +3,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:url('fonts/icomoon.eot?-7kz40q');
-  src:url('fonts/icomoon.eot?#iefix-7kz40q') format('embedded-opentype'),
-    url('fonts/icomoon.woff?-7kz40q') format('woff'),
-    url('fonts/icomoon.ttf?-7kz40q') format('truetype'),
-    url('fonts/icomoon.svg?-7kz40q#icomoon') format('svg');
+  src:url('fonts/icomoon.eot?mpv0g3');
+  src:url('fonts/icomoon.eot?#iefixmpv0g3') format('embedded-opentype'),
+    url('fonts/icomoon.woff?mpv0g3') format('woff'),
+    url('fonts/icomoon.ttf?mpv0g3') format('truetype'),
+    url('fonts/icomoon.svg?mpv0g3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-google-plus:before {
+  content: "\e607";
+}
+
+.icon-social-facebook:before {
+  content: "\e606";
+  font-size: $baseFontSize + 14px;
+  margin-top: -5px;
+}
+
 .icon-chevron-small-down:before {
   content: "\e600";
 }
@@ -41,6 +51,16 @@
 .icon-behance:before {
   content: "\e603";
 }
+
+.icon-instagram:before {
+  content: "\e604";
+}
+
+.icon-twitter:before {
+  content: "\e605";
+}
+
+
 
 .downArrow {
   position: absolute;

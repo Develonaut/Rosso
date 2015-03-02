@@ -1,0 +1,133 @@
+@mixin color-animation($seconds) {
+	-webkit-transition: color $seconds ease-out;
+	-moz-transition: color $seconds ease-in-out;
+	-o-transition: color $seconds ease-in-out;
+	-ms-transition: color $seconds ease-in-out;
+	transition: color $seconds ease-in-out;
+}
+
+@mixin bg-color-animation($seconds) {
+	-webkit-transition: background-color $seconds ease-out;
+	-moz-transition: background-color $seconds ease-in-out;
+	-o-transition: background-color $seconds ease-in-out;
+	-ms-transition: background-color $seconds ease-in-out;
+	transition: background-color $seconds ease-in-out;
+}
+
+
+footer {
+background: #333333;
+padding: 0;
+margin: 0;
+height: 320px;
+width: 100%;
+overflow: hidden;
+	.social {
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+		li {
+			width: 25%;
+			height: 40px;
+			float: left;
+			display: inline-block;
+			text-align: center;
+			cursor: pointer;
+			padding-top: 8px;
+			&:nth-of-type(1) {
+				@include bg-color-animation(0.3s);
+				background-color: #999999;
+			}
+			&:nth-of-type(2) {
+				@include bg-color-animation(0.3s);
+				background-color: #8d8c8c;
+			}
+			&:nth-of-type(3) {
+				@include bg-color-animation(0.3s);
+				background-color: #868686;
+			}
+			&:nth-of-type(4) {
+				@include bg-color-animation(0.3s);
+				background-color: #7b7b7b;
+			}
+			&:hover {
+				background-color: $baseBlack;
+			}
+			a {
+				width: 100%;
+				height: 100%;
+				display: block;
+				font-size: 22px;
+				color: white;
+				text-decoration: none;
+				&:hover {
+					color: $baseWhite;
+				}
+			}
+		}
+	}
+	.text {
+		width: 100%;
+		list-style: none;
+		text-decoration: none;
+		margin: 0;
+		padding: 0 0 0 0;
+		li {
+			text-align: left;
+			width: 100%;
+			height: 40px;
+			&:nth-of-type(1) {
+				@include bg-color-animation(0.3s);
+				background-color: #999999;
+
+			}
+			&:nth-of-type(2) {
+				@include bg-color-animation(0.3s);
+				background-color: #8d8c8c;
+			}
+			&:nth-of-type(3) {
+				@include bg-color-animation(0.3s);
+				background-color: #868686;
+			}
+			&:nth-of-type(4) {
+				@include bg-color-animation(0.3s);
+				background-color: #7b7b7b;
+			}
+			&:nth-of-type(5) {
+				@include bg-color-animation(0.3s);
+				background-color: #656565;
+			}
+			&:nth-of-type(6) {
+				@include bg-color-animation(0.3s);
+				background-color: #4B4B4B;
+			}
+			&:nth-of-type(7) {
+				@include bg-color-animation(0.3s);
+				background-color: #414141;
+			}
+			&:hover {
+				background-color: $baseBlack;
+			}
+			a {
+				text-decoration: none;
+				display: block;
+				width: 100%;
+				height: 100%;
+				&:hover {
+					color: $baseWhite;
+				}
+				p, span {
+				color: #fff;
+				width: 100%;
+				height: 100%;
+				font-size: 14px;
+				display: inline-block;
+				padding: 0 20px;
+				margin: 10px 0 0 0;
+				}
+			}
+		}
+	}
+}

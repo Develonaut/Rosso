@@ -80,11 +80,13 @@ nav a {
 .socialFeed {
     h1 {
       font-size: $baseFontSize + 5px;
+      color: $baseWhite;
+      font-weight: normal;
+    }
+    .socialTag {
+      color: $baseBlack;
       font-weight: normal;
     }
 }
-
-
-
 
 
