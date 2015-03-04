@@ -140,15 +140,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/scss\/contact.scss": {
+	"\/css\/scss\/fonts.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/scss\/contact.scss",
-		"outputAbbreviatedPath": "\/css\/css\/contact.css",
+		"inputAbbreviatedPath": "\/css\/scss\/fonts.scss",
+		"outputAbbreviatedPath": "\/css\/css\/fonts.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
