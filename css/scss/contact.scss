@@ -1,0 +1,94 @@
+.description_content {
+  width: 100%;
+}
+
+.intro_banner {
+  width: 100%;
+  height: 600px;
+  background: url('/css/build/images/meat_pizza.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+
+.description_body {
+  width: 350px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 95px;
+  float: left;
+  h1 {
+  letter-spacing: 0.040em;
+  display: inline-block;
+  position: relative;
+  padding: 7px 0;
+  margin: 0;
+  }
+  p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.020em;
+  margin: 0 0 40px 0;
+  line-height: 1.6em;
+  color: #434243;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    float: left;
+    clear: left;
+    width: 300px;
+    height: 40px;
+    padding-top: 11px;
+    padding-left: 20px;
+    color: $baseBlack;
+    text-decoration: none;
+    transition: background-color 0.3s ease 0s; 
+    -webkit-transition: background-color 0.3s ease 0s;
+    &:hover {
+       background-color: $baseBlack;
+       color: $baseWhite; 
+    }
+  }
+}
+
+.image_box_bread {
+  height: 495px;
+  width: 500px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  background-size: cover;
+}
+
+.image_box_bread li {
+  width: 238px;
+  height: 100%;
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.picture_content {
+  display: inline-block;
+  padding: 0;
+  height: 100%;
+  float: right;
+  vertical-align: middle;
+}
+
+.image_box_bread li:nth-of-type(1) {
+  background: url('/css/build/images/meat_pizza.jpg') no-repeat center center;
+  background-size: cover;
+  margin-right: 19px;
+}
+
+.image_box_bread li:nth-of-type(2) {
+  background: url('/css/build/images/meat_pizza.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+

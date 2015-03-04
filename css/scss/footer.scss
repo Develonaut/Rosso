@@ -1,3 +1,5 @@
+@import 'colors';
+
 @mixin color-animation($seconds) {
 	-webkit-transition: color $seconds ease-out;
 	-moz-transition: color $seconds ease-in-out;

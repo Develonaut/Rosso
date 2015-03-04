@@ -1,42 +1,13 @@
-var $time = new Date();
-		var $month = $time.getMonth();
-		var $date = $time.getDate();
-		var $day = $time.getDay();
-		var $hours = $time.getHours();
-		var $minutes = $time.getMinutes();
-		var $suffix = "am";
 
-		if($minutes < 10) {
-			$minutes = "0" + $minutes;
-		}
-
-		if ($hours >= 12) {
-			$suffix = "PM";
-			$hours = $hours - 12;
-		}
-
-		if ($hours === 0) {
-			$hours = 12;
-		}
-
-		var $days = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-
-		var $months = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+// on document load files
+(function(){
+$.getScript("/js/build/time-min.js", function(){});
+// only temporary until I figure out if/else statment
+// $.getScript("/js/build/navEvent-min.js", function(){});
+})();
 
 
-		$('.time').html($hours + ":" + $minutes + " " + '<span id="suffix">' + $suffix + '</span>');
-		$('.month').html($months[$month]);
-		$('.date').html($date);
-		$('.day').html($days[$day]);
-		$(function() {
-			$( "#stamp" ).draggable();
-			$('#sBtn').click(function() {
-				$('#stamp').fadeToggle('5000', function() {
-					if ($('#stamp').is(':visible')) {
-						$('#sBtn').val('Hide or Drag'); 
-					} else {
-						$('#sBtn').val('Bring it Back');
-					}
-				});
-			});
-		});
+if ($('footer ul li a').hasAttribute( "nav-event" ).length > 0) {
+	$.getScript("/js/build/navEvent-min.js", function(){});
+}
+
