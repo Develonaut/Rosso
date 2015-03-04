@@ -1,4 +1,3 @@
-(function(){
   var $time = new Date();
 		var $month = $time.getMonth();
 		var $date = $time.getDate();
@@ -41,10 +40,8 @@
 				});
 			});
 		});
-})();
 
 
-(function(){
 $("footer ul li").on("click", "a", function(event) {
     var id = $(this).attr("href");
     var offset = 70;
@@ -54,4 +51,3 @@ $("footer ul li").on("click", "a", function(event) {
     }, 500);
     event.preventDefault();
 });
-})();
