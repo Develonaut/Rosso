@@ -1,0 +1,91 @@
+.intro_banner_menu {
+  width: 100%;
+  height: 300px;
+  background: url('images/pizza3.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.menu {
+	padding: 0 0 60px 0;
+}
+
+.menu_title {
+	border-bottom: 1px solid;
+	h1, p {
+		display: inline-block;
+		float: right;
+		margin-bottom: 5px;
+		margin-top: 60px;
+	}
+	h1 {
+		float: left;
+	}
+	p {
+		padding-top: 10px;
+	}
+}
+
+.menu_item {
+	margin-bottom: 10px;
+	border-bottom: 1px solid;
+	h1 {
+		float: left;
+		margin: 10px 0 0 0;
+	}
+	.small_description {
+		float: left;
+		display: inline-block;
+		width: 50%;
+		clear: left;
+		margin-top: 15px;
+		margin-bottom: 7px;
+	}
+	.price {
+	float: right;
+	clear: right;
+	margin-bottom: 8px;
+	}
+	a {
+	color: $baseBlack;
+	float: right;
+	clear: right;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-right: 15px;
+	display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease 0s; 
+    -webkit-transition: background-color 0.3s ease 0s;
+		text-decoration: none;
+		&:hover {
+		background-color: $baseBlack;
+       	color: $baseWhite; 
+		}
+	}
+}
+
+
+@media screen and (max-width: 1100px) {
+	.intro_banner_menu {
+	margin-top: 198px;
+}
+
+	.menu_title {
+	border-bottom: 1px solid;
+	h1, p {
+		display: block;
+		float: left;
+		clear: left;
+		margin-bottom: 5px;
+		margin-top: 0px;
+	}
+	h1 {
+		margin-top: 60px;
+	}
+	p {
+		margin-top: -10px;
+		margin-bottom: 25px;
+	}
+}
+}
