@@ -26,6 +26,10 @@ nav {
 			a {
 				padding-top: 25px;
 			}
+			.active {
+				background-color: $baseBlack;
+				color: $baseWhite;
+			}
 		}
 		a {
 			padding: 20px 15px 0 15px;

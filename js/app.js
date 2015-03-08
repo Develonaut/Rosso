@@ -51,3 +51,5 @@ $("footer ul li").on("click", "a", function(event) {
     }, 500);
     event.preventDefault();
 });
+
+
